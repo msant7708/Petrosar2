@@ -1,0 +1,214 @@
+#reporte{
+    padding: 30px;
+}
+
+.reporte {
+    position: relative;
+    background-color: #FFF;
+    min-height: 680px;
+    padding: 15px
+}
+
+.reporte header {
+    padding: 10px 0;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #3989c6
+}
+
+.reporte .company-details {
+    text-align: right
+}
+
+.reporte .company-details .name {
+    margin-top: 0;
+    margin-bottom: 0
+}
+
+.reporte .contacts {
+    margin-bottom: 20px
+}
+
+.reporte .reporte-to {
+    text-align: left
+}
+
+.reporte .reporte-to .to {
+    margin-top: 0;
+    margin-bottom: 0
+}
+
+.reporte .reporte-details {
+    text-align: right
+}
+
+.reporte .reporte-details .reporte-id {
+    margin-top: 0;
+    color: #3989c6
+}
+
+.reporte main {
+    padding-bottom: 50px
+}
+
+.reporte main .thanks {
+    margin-top: -100px;
+    font-size: 2em;
+    margin-bottom: 50px
+}
+
+.reporte main .notices {
+    padding-left: 6px;
+    border-left: 6px solid #3989c6
+}
+
+.reporte main .notices .notice {
+    font-size: 1.2em
+}
+
+.reporte table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-bottom: 20px
+}
+
+.reporte table td,.reporte table th {
+    padding: 15px;
+    background: #eee;
+    border-bottom: 1px solid #fff
+}
+
+.reporte table th {
+    white-space: nowrap;
+    font-weight: 400;
+    font-size: 16px
+}
+
+.reporte table td h3 {
+    margin: 0;
+    font-weight: 400;
+    color: #3989c6;
+    font-size: 1em
+}
+
+.reporte table .qty,.reporte table .total,.reporte table .unit {
+    text-align: right;
+    font-size: 1em
+}
+
+.reporte table .no {
+    color: #fff;
+    font-size: 1em;
+    background: #3989c6
+}
+
+.reporte table .unit {
+    background: #ddd
+}
+
+.reporte table .total {
+    background: #3989c6;
+    color: #fff
+}
+
+.reporte table tbody tr:last-child td {
+    border: none
+}
+
+.reporte table tfoot td {
+    background: 0 0;
+    border-bottom: none;
+    white-space: nowrap;
+    text-align: right;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-top: 1px solid #aaa
+}
+
+.reporte table tfoot tr:first-child td {
+    border-top: none
+}
+
+.reporte table tfoot tr:last-child td {
+    color: #3989c6;
+    font-size: 1em;
+    border-top: 1px solid #3989c6
+}
+
+.reporte table tfoot tr td:first-child {
+    border: none
+}
+
+.reporte footer {
+    width: 100%;
+    text-align: center;
+    color: #777;
+    border-top: 1px solid #aaa;
+    padding: 8px 0
+}
+
+@media print {
+    .reporte {
+        font-size: 11px!important;
+        overflow: hidden!important
+    }
+
+    .reporte footer {
+        position: absolute;
+        bottom: 10px;
+        
+    }
+
+    .reporte>div:last-child {
+        page-break-before: always
+    }
+}
+
+@media print {
+    body {
+        margin: 0;
+        padding: 0;
+        size: A4 landscape; /* Tamaño de página A4 en modo horizontal */
+    }
+
+    .reporte {
+        page-break-before: auto; /* Evitar salto de página antes del div de clase "reporte" */
+        page-break-after: auto; /* Evitar salto de página después del div de clase "reporte" */
+    }
+
+    table {
+        page-break-inside: auto; /* Evitar salto de página dentro de la tabla */
+    }
+}
+
+#estado-unidad {
+    max-height: 150px;
+    max-width: 150px;
+}
+
+.orange {
+    color: orange;
+}
+
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
+}
+
+.warning-icon::before {
+    content: "\f071"; /* FontAwesome triangle icon for warning */
+    margin-right: 5px;
+}
+
+.alert-icon::before {
+    content: "\f06a"; /* FontAwesome exclamation icon for alert */
+    margin-right: 5px;
+}
+
+.check-icon::before {
+    content: "\f058"; /* FontAwesome check icon for success */
+    margin-right: 5px;
+}
